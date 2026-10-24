@@ -1,14 +1,30 @@
 // ---- Question bank: replace with your own CAPS-aligned questions ----
 const QUESTIONS = {
   9: [
-    { q: "Solve: 2x + 6 = 14", options: ["x = 3", "x = 4", "x = 5"], answer: 1 },
-    { q: "What is 3^2 + 4^2 ?", options: ["25", "49", "14"], answer: 0 },
-    { q: "Simplify: 5a - 2a", options: ["7a", "3a", "3"], answer: 1 }
+    { q: "Expand: 3(x+2)", options: ["3x+6", "3x+2", "6x+2"], correctIndex: 0 },
+  { q: "x² × x³ = ?", options: ["x^5", "x^6", "x^9"], correctIndex: 0 },
+  { q: "Solve: 4x = 20", options: [5, 4, 6], correctIndex: 0 },
+  { q: "Factorise: 5x+10", options: ["5(x+2)", "5x(2)", "10(x+1)"], correctIndex: 0 },
+  { q: "Solve: 2x-4=6", options: [5, 4, 3], correctIndex: 0 },
+  { q: "(x²)³ = ?", options: ["x^6", "x^5", "x^9"], correctIndex: 0 },
+  { q: "10³ = ?", options: [1000, 100, 30], correctIndex: 0 },
+  { q: "Solve: x/5=3", options: [15, 10, 8], correctIndex: 0 },
+  { q: "5² + 3² = ?", options: [34, 25, 9], correctIndex: 0 },
+  { q: "(-3)² = ?", options: [9, -9, 6], correctIndex: 0 },
   ],
   10: [
-    { q: "Factorise: x^2 - 9", options: ["(x-3)(x+3)", "(x-9)(x+1)", "(x-3)^2"], answer: 0 },
-    { q: "Solve x^2 = 49 (positive root)", options: ["5", "7", "9"], answer: 1 },
-    { q: "Gradient of y = 3x + 2 ?", options: ["2", "3", "5"], answer: 1 }
+     { q: "5² = ?", options: [10, 25, 15], correctIndex: 1 },
+  { q: "√144 = ?", options: [10, 12, 14], correctIndex: 1 },
+  { q: "Solve: 3x = 18", options: [6, 5, 9], correctIndex: 0 },
+  { q: "Solve: 2x + 4 = 10", options: [2, 3, 4], correctIndex: 1 },
+  { q: "(-5) + 8 = ?", options: [3, -3, 13], correctIndex: 0 },
+  { q: "7³ = ?", options: [343, 49, 21], correctIndex: 0 },
+  { q: "Convert 3/4 to percentage", options: ["75%", "50%", "25%"], correctIndex: 0 },
+  { q: "0.6 as fraction?", options: ["3/5", "6/10", "2/3"], correctIndex: 0 },
+  { q: "Solve: 5x = 45", options: [9, 8, 10], correctIndex: 0 },
+  { q: "Value of 10²?", options: [100, 20, 200], correctIndex: 0 },
+
+    { q: "Sum of angles in triangle?", options: ["180°", "360°", "90°"], correctIndex: 0 }
   ]
 };
 
