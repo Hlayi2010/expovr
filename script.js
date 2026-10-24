@@ -7,8 +7,22 @@ let scoreboard = null;
 let correctStreak = 0;
 
 const questionsByGrade = {
- 
   10: [
+   { q: "5² = ?", options: [10, 25, 15], correctIndex: 1 },
+  { q: "√144 = ?", options: [10, 12, 14], correctIndex: 1 },
+  { q: "Solve: 3x = 18", options: [6, 5, 9], correctIndex: 0 },
+  { q: "Solve: 2x + 4 = 10", options: [2, 3, 4], correctIndex: 1 },
+  { q: "(-5) + 8 = ?", options: [3, -3, 13], correctIndex: 0 },
+  { q: "7³ = ?", options: [343, 49, 21], correctIndex: 0 },
+  { q: "Convert 3/4 to percentage", options: ["75%", "50%", "25%"], correctIndex: 0 },
+  { q: "0.6 as fraction?", options: ["3/5", "6/10", "2/3"], correctIndex: 0 },
+  { q: "Solve: 5x = 45", options: [9, 8, 10], correctIndex: 0 },
+  { q: "Value of 10²?", options: [100, 20, 200], correctIndex: 0 },
+
+    { q: "Sum of angles in triangle?", options: ["180°", "360°", "90°"], correctIndex: 0 },
+  
+  ],
+  9: [
     { q: "Expand: 3(x+2)", options: ["3x+6", "3x+2", "6x+2"], correctIndex: 0 },
   { q: "x² × x³ = ?", options: ["x^5", "x^6", "x^9"], correctIndex: 0 },
   { q: "Solve: 4x = 20", options: [5, 4, 6], correctIndex: 0 },
@@ -54,6 +68,7 @@ function startGame() {
   document.querySelector('#startButton').setAttribute('visible', 'false');
   document.querySelector('#welcomeText').setAttribute('visible', 'false');
   document.querySelector('#grade10Btn').setAttribute('visible', 'true');
+  document.querySelector('#grade9Btn').setAttribute('visible', 'true');
 }
 
 function selectGrade(grade) {
@@ -76,8 +91,8 @@ function selectGrade(grade) {
   });
 
   speak(`You selected Grade ${grade}, ${playerName}. Let's begin.`);
-  document.querySelector('#grade8Btn').setAttribute('visible', 'false');
-  document.querySelector('#grade9Btn').setAttribute('visible', 'false');
+  document.querySelector('#grade1Btn').setAttribute('visible', 'false');
+  document.querySelector('#grade2Btn').setAttribute('visible', 'false');
 
   initScoreboard();
   showQuestion();
