@@ -8,7 +8,7 @@ let correctStreak = 0;
 
 const questionsByGrade = {
  
-  9: [
+  10: [
     { q: "Expand: 3(x+2)", options: ["3x+6", "3x+2", "6x+2"], correctIndex: 0 },
   { q: "x² × x³ = ?", options: ["x^5", "x^6", "x^9"], correctIndex: 0 },
   { q: "Solve: 4x = 20", options: [5, 4, 6], correctIndex: 0 },
